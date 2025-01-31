@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'meu_projeto.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'sistema_escolar',  # Nome do banco de dados
+        'USER': 'root',      # Usuário do MySQL
+        'PASSWORD': '3364',    # Senha do MySQL
+        'HOST': 'localhost',        # Endereço do servidor
+        'PORT': '3306',             # Porta do MySQL
     }
 }
 
